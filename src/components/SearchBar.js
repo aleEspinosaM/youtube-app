@@ -21,7 +21,6 @@ class SearchBar extends Component {
                     onChange={this.onInputChange}
                     value={this.state.videos}
                     />
-                value of the input {this.state.videos}
             </div>
         );
     }
