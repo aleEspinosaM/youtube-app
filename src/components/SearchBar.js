@@ -4,13 +4,13 @@ class SearchBar extends Component {
     constructor(props) {
         super(props);
 
-        this.state={term: ''};
+        this.state={videos: ''};
         this.onInputChange = this.onInputChange.bind(this);
         
     }
     
     onInputChange(e) {
-        this.setState({term: e.target.value});
+        this.setState({videos: e.target.value});
     }
     render() {
         return (
@@ -19,9 +19,9 @@ class SearchBar extends Component {
                     type="text" 
                     placeholder="Search Videos" 
                     onChange={this.onInputChange}
-                    value={this.state.term}
+                    value={this.state.videos}
                     />
-                value of the input {this.state.term}
+                value of the input {this.state.videos}
             </div>
         );
     }
